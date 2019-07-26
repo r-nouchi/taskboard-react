@@ -68,6 +68,8 @@ const messagesEn = {
   "ボードの登録に失敗しました": "Failed to register board",
   "ボードの更新に失敗しました": "Failed to update board",
   "ボードの削除に失敗しました": "Failed to delete board",
+  // Setting Form
+  "ボードの表示順変更": "Change board display order"
 }
 
 export default class I18n {

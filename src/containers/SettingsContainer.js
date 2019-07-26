@@ -14,6 +14,8 @@ import {
 
 const mapStateToProps = (state) => ({
   settingsState: state.settingsState,
+  boardsState: state.boardsState,
+  usersState: state.usersState,
 })
 
 const mapDispatchToProps = (dispatch) => ({
@@ -23,10 +25,10 @@ const mapDispatchToProps = (dispatch) => ({
   onCreateUserButtonClick(userCreateRequest) {
     dispatch(createUserStartEvent(userCreateRequest))
   },
-  onUpdateUserIconClick(user) {
+  onUpdateUserButtonClick(user) {
     dispatch(updateUserStartEvent(user))
   },
-  onDeleteUserIconClick(user) {
+  onDeleteUserButtonClick(user) {
     dispatch(deleteUserStartEvent(user))
   },
   loadBoardList() {
@@ -35,10 +37,10 @@ const mapDispatchToProps = (dispatch) => ({
   onCreateBoardButtonClick(boardCreateRequest) {
     dispatch(createBoardStartEvent(boardCreateRequest))
   },
-  onUpdateBoardIconClick(board) {
+  onUpdateBoardButtonClick(board) {
     dispatch(updateBoardStartEvent(board))
   },
-  onDeleteBoardIconClick(board) {
+  onDeleteBoardButtonClick(board) {
     dispatch(deleteBoardStartEvent(board))
   },
   changeBoardOrderLinkClick(boards) {
